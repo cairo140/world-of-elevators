@@ -1,5 +1,5 @@
-import ElevatorConfig from './ElevatorConfig';
-import FloorConfig from './FloorConfig';
+import ElevatorConfig from "./ElevatorConfig";
+import FloorConfig from "./FloorConfig";
 
 export interface WorldConfigInit {
   elevatorConfigs?: any;
@@ -29,13 +29,13 @@ export default class WorldConfig {
     }
 
     // params.elevatorConfigs can be sparse, so we can't use forEach
-    if (typeof params.elevatorConfigs === 'undefined') {
+    if (typeof params.elevatorConfigs === "undefined") {
       params.elevatorConfigs = new Array(params.numElevators || 1);
     }
     this.elevatorConfigs = [];
     for (let i = 0; i < params.elevatorConfigs.length; i++) {
       let elevatorConfig = params.elevatorConfigs[i];
-      if (typeof params.elevatorConfigs[i] === 'undefined') {
+      if (typeof params.elevatorConfigs[i] === "undefined") {
         elevatorConfig = {};
       }
       this.elevatorConfigs[i] = new ElevatorConfig(elevatorConfig);

@@ -7,12 +7,15 @@
   "dependencies": {},
   "devDependencies": {
     "jest-cli": "^0.8.0",
+    "tslint": "^3.2.2",
     "typescript": "^1.7.5"
   },
   "jest": {
     "rootDir": "./lib"
   },
   "scripts": {
-    "test": "tsd install && tsc && jest"
+    "lint": "tslint src/**/*.ts",
+    "postinstall": "tsd reinstall",
+    "test": "tsc && jest"
   }
 }

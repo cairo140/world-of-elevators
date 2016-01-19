@@ -1,14 +1,14 @@
 /// <reference path="../../typings/jest/jest.d.ts"/>
 
-import ElevatorConfig from '../config/ElevatorConfig';
-import FloorConfig from '../config/FloorConfig';
-import WorldConfig from '../config/WorldConfig';
+import ElevatorConfig from "../config/ElevatorConfig";
+import FloorConfig from "../config/FloorConfig";
+import WorldConfig from "../config/WorldConfig";
 
-jest.dontMock('../World');
+jest.dontMock("../World");
 
-import World from '../World';
+import World from "../World";
 
-describe('World with basic config', () => {
+describe("World with basic config", () => {
   let basicWorldConfig;
   let world;
   beforeEach(() => {
@@ -18,11 +18,11 @@ describe('World with basic config', () => {
     world = new World(basicWorldConfig);
   });
 
-  it('should instantiate', () => {
+  it("should instantiate", () => {
     expect(world).toBeDefined();
   });
 
-  it('should have 0 people', () => {
+  it("should have 0 people", () => {
     expect(world.people.length).toBe(0);
   });
 });
