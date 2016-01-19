@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=4.1 <5",
+    "npm": ">=3.1 <4"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest-cli": "^0.8.0",
+    "typescript": "^1.7.5"
+  },
+  "jest": {
+    "rootDir": "./lib"
+  },
+  "scripts": {
+    "test": "tsd install && tsc && jest"
+  }
+}
