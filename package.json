@@ -7,16 +7,16 @@
   "dependencies": {},
   "devDependencies": {
     "jest-cli": "^0.8.0",
-    "tsd": "^0.6.5",
     "tslint": "^3.2.2",
-    "typescript": "^1.7.5"
+    "typescript": "^1.7.5",
+    "typings": "^0.6.9"
   },
   "jest": {
     "rootDir": "./lib"
   },
   "scripts": {
     "lint": "tslint src/**/*.ts",
-    "postinstall": "tsd reinstall",
+    "postinstall": "typings install",
     "test": "tsc && jest"
   }
 }

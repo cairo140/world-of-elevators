@@ -1,0 +1,5 @@
+{
+  "ambientDependencies": {
+    "jest": "github:DefinitelyTyped/DefinitelyTyped/jest/jest.d.ts#72314845b938bfb8c507306d5c3e45f708c2602a"
+  }
+}

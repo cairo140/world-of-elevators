@@ -1,5 +1,3 @@
-/// <reference path="../../typings/jest/jest.d.ts"/>
-
 import ElevatorConfig from "../config/ElevatorConfig";
 import FloorConfig from "../config/FloorConfig";
 import WorldConfig from "../config/WorldConfig";
